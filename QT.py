@@ -623,8 +623,6 @@ if __name__ == '__main__':
 
     w = 1280; h = 720
     app = QApplication(sys.argv)
-    frm = QtGui.QFrame ()
-    frm.sizeHint = lambda: QtCore.QSize (w, h)
     app.setApplicationName("Exchange Program")
     gallery = WidgetGallery()
     gallery.show()
