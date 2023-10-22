@@ -13,31 +13,37 @@ class Exchange(object):
         self.name = Name
 
     def getPrice(self):
+        print(self.i)
         price = soup.find_all("li", {"class":"cell048 node-f"})[self.i].text
+        price = price.replace(".", "")
         price = price.replace(",", ".")
         price = float(price)
         return price
 
     def getHighest(self):
         highest = soup.find_all("li", {"class":"cell048 node-h"})[self.i].text
+        highest = highest.replace(".", "")
         highest = highest.replace(",", ".")
         highest = float(highest)
         return highest
 
     def getLowest(self):
         lowest = soup.find_all("li", {"class":"cell048 node-i"})[self.i].text
+        lowest = lowest.replace(".", "")
         lowest = lowest.replace(",", ".")
         lowest = float(lowest)
         return lowest
 
     def getAverage(self):
         average = soup.find_all("li", {"class":"cell048 node-j"})[self.i].text
+        average = average.replace(".", "")
         average = average.replace(",", ".")
         average = float(average)
         return average
 
     def getPercent(self):
         percent = soup.find_all("li", {"class":"cell048 node-e"})[self.i].text
+        percent = percent.replace(".", "")
         percent = percent.replace(",", ".")
         percent = float(percent)
         return percent
@@ -45,11 +51,13 @@ class Exchange(object):
     def getCapacityLot(self):
         capacityLot = soup.find_all("li", {"class":"cell064 node-k"})[self.i].text
         capacityLot = capacityLot.replace(".", "")
+        capacityLot = capacityLot.replace(".", "")
         capacityLot = float(capacityLot)
         return capacityLot
 
     def getCapacityTL(self):
         capacityTL = soup.find_all("li", {"class":"cell064 node-l"})[self.i].text
+        capacityTL = capacityTL.replace(".", "")
         capacityTL = capacityTL.replace(".", "")
         capacityTL = float(capacityTL)
         return capacityTL
@@ -154,10 +162,6 @@ class AllExData(Exchange):
     ExUlker = Exchange(93, "ULKER")
     ExVakbn = Exchange(94, "VAKBN")
     ExVestl = Exchange(95, "VESTL")
-    ExVkgyo = Exchange(96, "VKGYO")
-    ExYatas = Exchange(97, "YATAS")
-    ExYkbnk = Exchange(98, "YKBNK")
-    ExZoren = Exchange(99, "ZOREN")
 
     exchanges_list = (ExAefes,
         ExAfyon,
@@ -254,7 +258,4 @@ class AllExData(Exchange):
         ExUlker,
         ExVakbn,
         ExVestl,
-        ExVkgyo,
-        ExYatas,
-        ExYkbnk,
-        ExZoren)
+      )

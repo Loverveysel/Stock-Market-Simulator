@@ -24,8 +24,11 @@ percentList = []
 capacityLotList = []
 capacityTlList = []
 
+
 for exs in ex.exchanges_list:
     nameList.append(exs.getName())
+
+
 
 for exs in ex.exchanges_list:
     priceList.append(exs.getPrice())
