@@ -15,19 +15,19 @@ class WidgetGallery(QDialog):
         self.e = player()
 
         palette = QPalette()
-        palette.setColor(QPalette.Window, QColor(53, 53, 53))
-        palette.setColor(QPalette.WindowText, Qt.white)
-        palette.setColor(QPalette.Base, QColor(25, 25, 25))
-        palette.setColor(QPalette.AlternateBase, QColor(53, 53, 53))
-        palette.setColor(QPalette.ToolTipBase, Qt.white)
-        palette.setColor(QPalette.ToolTipText, Qt.white)
-        palette.setColor(QPalette.Text, Qt.white)
-        palette.setColor(QPalette.Button, QColor(53, 53, 53))
-        palette.setColor(QPalette.ButtonText, Qt.white)
-        palette.setColor(QPalette.BrightText, Qt.red)
-        palette.setColor(QPalette.Link, QColor(42, 130, 218))
-        palette.setColor(QPalette.Highlight, QColor(42, 130, 218))
-        palette.setColor(QPalette.HighlightedText, Qt.black)
+        palette.setColor(QPalette.Window, QColor(240, 240, 240))  # Arka plan rengi
+        palette.setColor(QPalette.WindowText, Qt.black)  # Metin rengi
+        palette.setColor(QPalette.Base, QColor(255, 255, 255))  # Buton ve giriş kutusu arka plan rengi
+        palette.setColor(QPalette.AlternateBase, QColor(230, 230, 230))  # Alternatif arka plan rengi
+        palette.setColor(QPalette.ToolTipBase, Qt.black)  # İpucu metni rengi
+        palette.setColor(QPalette.ToolTipText, Qt.white)  # İpucu arka planı metni
+        palette.setColor(QPalette.Text, Qt.black)  # Genel metin rengi
+        palette.setColor(QPalette.Button, QColor(220, 220, 220))  # Buton rengi
+        palette.setColor(QPalette.ButtonText, Qt.black)  # Buton metni rengi
+        palette.setColor(QPalette.BrightText, Qt.red)  # Vurgulu metin rengi
+        palette.setColor(QPalette.Link, QColor(42, 130, 218))  # Bağlantı rengi
+        palette.setColor(QPalette.Highlight, QColor(42, 130, 218))  # Vurgu rengi
+        palette.setColor(QPalette.HighlightedText, Qt.white)  # Vurgulu metin arka planı
         app.setPalette(palette)
         app.setWindowIcon(QIcon("ExchangeIcon.jpg"))
 
