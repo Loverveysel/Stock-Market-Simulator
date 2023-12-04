@@ -1,4 +1,3 @@
-# Exchange-Program
 # Stock Market Simulator
 
 The Stock Market Simulator is a desktop application that provides a virtual stock trading experience. This application offers the opportunity to invest in stocks listed in the BIST100 (Borsa Istanbul 100) index and gives users a virtual stock market experience.
